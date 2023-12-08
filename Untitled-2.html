@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="C:\Users\MSI\Desktop\projetweblivre\styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription à la Bibliothèque</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #5f4c4c;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #inscription-form {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="inscription-form">
+        <h2>Inscription à la Bibliothèque</h2>
+
+        <!-- Formulaire d'Inscription -->
+        <form action="traitement-inscription.php" method="POST">
+            <label for="nom">Nom :</label>
+            <input type="text" name="nom" id="nom" required>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" name="prenom" id="prenom" required>
+
+            <label for="email">Adresse E-mail :</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="mot_de_passe">Mot de passe :</label>
+            <input type="password" name="mot_de_passe" id="mot_de_passe" required>
+
+            <!-- Ajoutez d'autres champs selon vos besoins -->
+
+            <input type="submit" value="S'inscrire">
+        </form>
+    </div>
+
+</body>
+</html>

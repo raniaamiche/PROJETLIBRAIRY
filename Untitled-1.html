@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue de Livres</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #catalogue {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"], select, input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="catalogue">
+        <h2>Catalogue de Livres</h2>
+
+        <!-- Formulaire de Recherche -->
+        <form action="" method="GET">
+            <label for="recherche-livre">Recherche Livre :</label>
+            <input type="text" name="titre" id="recherche-titre" placeholder="Par titre">
+
+            <label for="recherche-auteur">Recherche Auteur :</label>
+            <input type="text" name="auteur" id="recherche-auteur" placeholder="Par auteur">
+
+            <label for="categorie">Catégorie :</label>
+            <select name="categorie" id="categorie">
+                <option value="romantique">Romantique</option>
+                <option value="historique">Historique</option>
+                <option value="science-fiction">Science-fiction</option>
+                <!-- Ajoutez d'autres options selon vos besoins -->
+            </select>
+
+            <input type="submit" value="Rechercher">
+        </form>
+
+        <!-- Affichage du Catalogue de Livres (à adapter selon votre structure de données) -->
+        <div id="liste-livres">
+            <!-- Votre code pour afficher la liste de livres ici -->
+            <!-- Par exemple : -->
+            
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+/* reset default styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* set global font and line height */
+body {
+    background-image: url('imhhhhh.jpg'); /* Remplacez 'chemin/vers/votre/image.jpg' par le chemin de votre image */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/*Navigation Bar */
+.navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #423d3d;
+    padding:  15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color :#ff9000;
+
+}
+
+/*header*/
+.header {
+     /* Ajoutez du style pour les images dynamiques */
+    #dynamicImage {
+        display: flex;
+        justify-content: space-around; /* Pour espacer les images */
+        align-items: center; /* Pour centrer les images verticalement */
+        height: 50vh; /* La moitié de la hauteur de la vue */
+    }
+
+    #dynamicImage img {
+        width: 100%;
+        max-height: 100%;
+        display: none; /* Masquer toutes les images par défaut */
+    }
+
+    #dynamicImage img:first-child {
+        display: block; /* Afficher la première image au chargement */
+    }
+}
+
+
+
+.header h1 {
+    position: absolute;
+    top: 30%; /* Centrer verticalement */
+    left: 50%; /* Centrer horizontalement */
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+}
+
+/* section */
+.section{
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section h2{
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.section p{
+    font-size: 1.1rem;
+    color: #777;
+}
+
+/*style the section content contariner*/
+.section-content{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.project{
+    background-color: #555050;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+    transition: box-shadow 0.3s;
+}
+.project h1{
+    color: #fff;
+    margin-left: 50%;
+
+}
+/*Add shadow effect on project hover */
+.project:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    max-width: 1000%; /*Ensure images don't exceed their content*/
+    height: auto; /* maintain image aspect ratio */
+    border-radius: 5px; /*round the corners of ..*/
+}
+
+.project h3 {
+    margin: 15px 0; /* Add spacing above and ...*/
+    font-size: 1.5rem; /*set the font size for ...*/
+    color: #333; /*set text color to a dark ...*/
+}
